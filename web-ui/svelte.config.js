@@ -4,7 +4,9 @@ const sveltePreprocess = require('svelte-preprocess');
 
 module.exports = {
   preprocess: sveltePreprocess({
-    scss: true,
+    scss: {
+      prependData: `@import 'web-ui/src/styles/variables.scss';`
+    },
     sourceMap: true,
     defaults: {
       markup: 'pug',

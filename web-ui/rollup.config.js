@@ -25,6 +25,9 @@ export default {
 					markup: 'pug',
 					style: 'scss'
 				},
+				scss: {
+					prependData: `@import 'src/styles/variables.scss';`
+				},
 				markupTagName: 'markup'
 			}),
 			// enable run-time checks when not in production
