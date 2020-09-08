@@ -1,5 +1,6 @@
 <script>
     import ImageItem from './ImageItem.svelte'
+    import { blur } from 'svelte/transition'
 
     export let images
 
@@ -7,8 +8,9 @@
 </script>
 
 <markup>
-    +each('images as image')
-        ImageItem(url='{image.uri}' alt='alt')
+    +each('images as image (image.id)')
+        span(transition:blur)
+            ImageItem(url='{image.uri}', alt='alt')
 </markup>
 
 <style>

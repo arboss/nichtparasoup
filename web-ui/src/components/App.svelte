@@ -2,13 +2,19 @@
 	import ImagePane from './ImagePane.svelte'	
 
 	let images = []
+	let servedCount = 0
 	let maximum = 10
 	let interval = 5000
 
 	const nextImage = async () => {
 		try {
-			const newImage = await fetch('/get')
-			images = [await newImage.json(), ...images]
+			const response = await fetch('/get')
+			let newImage = await response.json()
+			
+			newImage.id = servedCount
+			servedCount += 1
+			
+			images = [newImage, ...images]
 
 			if(images.length > maximum) {
 				images = images.slice(0,maximum)
