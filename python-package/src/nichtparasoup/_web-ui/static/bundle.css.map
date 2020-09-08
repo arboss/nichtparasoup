@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "App.svelte"
+  ],
+  "sourcesContent": [
+    "<main><h1>Hello {name}!</h1></main>\n\n<script>\n\texport let name\n</script>\n\n<style>main {\n  text-align: center;\n  padding: 1em;\n  max-width: 240px;\n  margin: 0 auto; }\n\nh1 {\n  color: #ff3e00;\n  text-transform: uppercase;\n  font-size: 4em;\n  font-weight: 100; }\n\n@media (min-width: 640px) {\n  main {\n    max-width: none; } }\n\n/*# sourceMappingURL=App.svelte.css.map */</style>"
+  ],
+  "names": [],
+  "mappings": "AAMO,IAAI,eAAC,CAAC,AACX,UAAU,CAAE,MAAM,CAClB,OAAO,CAAE,GAAG,CACZ,SAAS,CAAE,KAAK,CAChB,MAAM,CAAE,CAAC,CAAC,IAAI,AAAE,CAAC,AAEnB,EAAE,eAAC,CAAC,AACF,KAAK,CAAE,OAAO,CACd,cAAc,CAAE,SAAS,CACzB,SAAS,CAAE,GAAG,CACd,WAAW,CAAE,GAAG,AAAE,CAAC,AAErB,MAAM,AAAC,YAAY,KAAK,CAAC,AAAC,CAAC,AACzB,IAAI,eAAC,CAAC,AACJ,SAAS,CAAE,IAAI,AAAE,CAAC,AAAC,CAAC"
+}
